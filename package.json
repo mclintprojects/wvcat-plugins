@@ -1,0 +1,12 @@
+{
+	"name": "wvcat-plugins",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/plugin.js",
+	"scripts": {
+		"build": "parcel build src/plugin.js --out-dir ../wvcat --target browser --global Plugin"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
