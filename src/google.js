@@ -3,13 +3,16 @@ module.exports = {
 	commands: [
 		{
 			element: 'search-input',
-			match: ['search for *'],
+			match: ['search for *query'],
 			onmatch: function(query) {
-				const input = document.querySelector(
-					`input[data-wvcat-id='search-input']`
-				);
-				input.value = query;
-				input.dispatchEvent(new Event('input'));
+				window.location.href = `https://www.google.com/search?q=${query}`;
+			}
+		},
+		{
+			element: 'im-feeling-button',
+			match: ["i'm feeling lucky"],
+			onmatch: function() {
+				wvcat.execute("click i'm feeling lucky button");
 			}
 		}
 	]
