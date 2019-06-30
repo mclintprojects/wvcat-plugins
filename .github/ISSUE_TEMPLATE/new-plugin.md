@@ -2,7 +2,7 @@
 name: New plugin
 about: Contribute a new plugin to this project
 title: Plugin for <domain_name_here>
-labels: ''
+labels: new-plugin
 assignees: mclintprojects
 
 ---
