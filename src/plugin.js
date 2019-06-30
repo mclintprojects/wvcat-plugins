@@ -1,7 +1,7 @@
-const google = require('./google');
+const google = require('./domains/google');
 
 module.exports = function() {
-	const plugins = [google];
+	const plugins = [...google];
 
 	this.initialize = function(wvcat, url) {
 		const plugin = plugins.find(p => p.match.test(url));
